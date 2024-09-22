@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navbar Example</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <script>
+    let clicked = false;
+    function handleClick() {
+      clicked = !clicked;
+      const menuIcon = document.getElementById('menu-icon');
+      const navMenu = document.getElementById('nav-menu');
+      
+      menuIcon.className = clicked ? 'fas fa-times' : 'fas fa-bars';
+      navMenu.className = clicked ? 'nav-menu active' : 'nav-menu';
+    }
+  </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+  <div class="hero" id="Home">
+    <video autoplay loop muted playsinline class="back-video">
+      <source src="./assets/video/car.mp4" type="video/mp4">
+    </video>
+    <nav class="NavbarItems">
+      <img src="./assets/ASHERFIELD LOGO 2.png" alt="Logo" class="logo">
+      <div class="menu-icons" id="menu-icon-container" onclick="handleClick()">
+        <i id="menu-icon" class="fas fa-bars"></i>
+      </div>
+      <ul id="nav-menu" class="nav-menu">
+        <li>
+          <a class="nav-links" href="#Home">
+            <i class="fas fa-home"></i> Home
+          </a>
+        </li>
+        <li>
+          <a class="nav-links" href="#about-us">
+            <i class="fas fa-info-circle"></i> About
+          </a>
+        </li>
+        <li>
+          <a class="nav-links" href="#services">
+            <i class="fas fa-concierge-bell"></i> Services
+          </a>
+        </li>
+        <li>
+          <a class="nav-links" href="#contact">
+            <i class="fas fa-envelope"></i> Contact
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div class="hero-content">
+        <h1>Welcome to Asherfield Auto Detailing</h1>
+        <p>Professional Mobile Car Detailors in Perth</p>
+        <a href="#animal-section">Explore</a>
+      </div>
+  </div>
+
+  <section class="about-us" id="about-us">
+    <div class="about-content">
+      <div class="text-content">
+        <h1>About Us</h1>
+        <p>
+          Welcome to Asherfield Auto Detailing! We provide top-notch car detailing services to help
+          maintain your vehicle's beauty and value. Our team of skilled professionals is dedicated
+          to delivering the highest quality service. With years of experience, we use only the best
+          products and tools to give your car a showroom finish. Let us take care of your car with
+          our passion and expertise!
+        </p>
+        <a href="#animal-section">Get in Touch</a>
+      </div>
+      <div class="image-content">
+        <img src="./assets/car1.jpg" alt="About Us Photo">
+      </div>
+    </div>
+  </section>
+
+
+  <section class="services-section">
+    <!-- Headings -->
+    <div class="section-heading">
+      <h1>Experience Asherfield</h1>
+      <h3>Comprehensive detailing solutions</h3>
+    </div>
+
+    <!-- Service Cards -->
+    <div class="services" id="services">
+      <div class="card">
+       <a href="./ceramic.html"><img src="./assets/car2.jpg" alt="Ceramic Coatings"></a> 
+        <div class="card-info">
+          <h2>Ceramic Coatings</h2>
+          <p>From $799</p>
+        </div>
+        <div class="hover-details">
+          <h3>Ceramic Coating Details</h3>
+          <p>Transform your car's exterior with our expert detailimg </p>
+        </div>
+      </div>
+
+      <div class="card">
+       <a href="./asher.html"><img src="./assets/car1.jpg" alt="Asher Platinum"></a>
+        <div class="card-info">
+          <h2>Asher Platinum</h2>
+          <p>$1999</p>
+        </div>
+        <div class="hover-details">
+          <h3>Asher Platinum Package</h3>
+          <p>Exterior ceramic coating </p>
+          <p>Interior ceramic coating</p>
+          <p>High Temp Res Rim Coating</p>
+          <p>Leather Protection with UV filter</p>
+          <p>Window Tinting</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <a href="./leather.html"><img src="./assets/new car.jpg" alt="Leather Protection"></a>
+        <div class="card-info">
+          <h2>Leather Protection</h2>
+          <p>From $150</p>
+        </div>
+        <div class="hover-details">
+          <h3>Leather Protection</h3>
+          <p>Keep your car's leather looking new with our protective services.</p>
+        </div>
+      </div>
+      <div class="card">
+       <a href="./dealing.html"> <img src="./assets/car1.jpg" alt="Interior Dealing"></a>
+        <div class="card-info">
+          <h2>Interior detailing</h2>
+          <p>From $175</p>
+        </div>
+        <div class="hover-details">
+          <h3>Interior detailing</h3>
+          <p>Enhance your driving experience with a pristine interior</p>
+        </div>
+      </div>
+      <div class="card">
+        <a href="./paint.html"><img src="./assets/car2.jpg" alt="Paint Correction"></a>
+        <div class="card-info">
+          <h2>Paint correction</h2>
+          <p>From $260</p>
+        </div>
+        <div class="hover-details">
+          <h3>Paint correction</h3>
+          <p>Restore your vehicle's paint to its original glory</p>
+        </div>
+      </div>
+      <div class="card">
+        <a href="./window.html"><img src="./assets/new car.jpg" alt="Leather Protection"></a>
+        <div class="card-info">
+          <h2>Window tinting</h2>
+          <p>From $300</p>
+        </div>
+        <div class="hover-details">
+          <h3>Window tinting</h3>
+          <p>stay cool,Stay Private</p>
+        </div>
+      </div>
+      <div class="card">
+        <a href="./sale.html"><img src="./assets/car1.jpg" alt="Sale Preparation"></a>
+        <div class="card-info">
+          <h2>Sale Preparation</h2>
+          <p>From $350</p>
+        </div>
+        <div class="hover-details">
+          <h3>Sale Preparation</h3>
+          <p>Get Sale-Ready!</p>
+        </div>
+      </div>
+      <div class="card">
+        <a href="./maintenance.html"><img src="./assets/car2.jpg" alt="Monthly Maintenance[Comapanies]"></a>
+        <div class="card-info">
+          <h2>Monthly Maintenance <br>[Comapanies]</h2>
+          <p></p>
+        </div>
+        <div class="hover-details">
+          <h3>Monthly Maintenance <br>[Comapanies]</h3>
+          <p>Consistent upkeep not only ensures the smooth and relaible
+            operation of the vehicle but also helps to preserve its value over time</p>
+        </div>
+      </div>
+      <div class="card">
+       <a href="./rim.html"><img src="./assets/new car.jpg" alt="Rim Coating"></a> 
+        <div class="card-info">
+          <h2>Rim Coating</h2>
+          <p>$100(1)</p>
+        </div>
+        <div class="hover-details">
+          <h3>Rim Coating</h3>
+          <p>Protect your rims from heat,brake dust, and road contaminants</p>
+        </div>
+      </div>
+      <div class="card">
+       <a href="./asher-pro.html"> <img src="./assets/car1.jpg" alt="Asher Pro"></a>
+        <div class="card-info">
+          <h2>Asher <b>Pro</b></h2>
+          <p>$1499</p>
+        </div>
+        <div class="hover-details">
+          <h3>Asher <b>Pro</b></h3>
+          <p>Exterior Ceramic coating</p>
+          <p>Interior Ceramic coating</p>
+          <p>High Temp Res Rim Coating</p>
+          <p>Leather Protection with UV filter</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+<section class="Contact" id="contact">
+    <div class="heading">
+        <h1>Contact us for appointments</h1>
+    </div>
+    <div class="mapbox">
+      <figure>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3381.9442061205286!2d115.91373670000002!3d-32.0437016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2a32bdbb7a7b9429%3A0xb7be3bebf1a61896!2s5%20Periwinkle%20Way%2C%20Parkwood%20WA%206147%2C%20Australia!5e0!3m2!1sen!2slk!4v1726653130002!5m2!1sen!2slk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="from-container">
+
+		<form name='registration' method="post" action="index.html"
+			onSubmit="return formValidation();">
+
+			<input type="text" name="fname" placeholder="Name" size="100" />
+			<input type="text" name="email" placeholder="email address" size="50" />
+			<input type="text" name="address" placeholder="Phone Number" size="50" />
+            <textarea name="message" placeholder="Message" id="" rows="6" cols="70"></textarea>
+            <label for="contact-method">Preferred Contact Method:</label>
+            <select id="contact-method" name="contact-method">
+                <option value="select">Select</option>   
+                <option value="phone">Text Message</option>
+                <option value="phone">Phone</option>
+                <option value="email">Email</option>
+            </select>
+            <label for="contact-method" class="label2">How Did you Hear about us:</label>
+            <select id="contact-method" name="contact-method">
+                <option value="select">Select</option>   
+                <option value="message">Text Message</option>
+                <option value="phone">Phone</option>
+                <option value="email">Email</option>
+            </select>
+            <label for="contact-method" class="label2">Which service or services are you interested in?</label>
+            <select id="contact-method" name="contact-method">
+                <option value="select">Select</option>   
+                <option value="phone">Ceramic Coatings</option>
+                <option value="phone">Interior detailing</option>
+                <option value="email">Paint correction</option>
+                <option value="email">Leather Protection</option>
+                <option value="email">Monthly Maintance [Companies]</option>
+                <option value="email">Leather Protection</option>
+                <option value="email">Window tinting</option>
+                <option value="email">Service title 7</option>
+                <option value="email">Service title 8</option>
+            </select>
+            
+			<div class="buttons">
+				<button type="submit" name="submit">Submit</button>
+				<button type="reset" name="reset">Reset</button>
+			</div>
+
+		</form>
+	</div>
+</section>
+<section class="Footer">
+    <div class="footer">
+        <div class="top">
+          <div>
+           <img src="./assets/ASHERFIELD LOGO 2.png" alt="" class="footer-logo">
+          </div>
+          <div>
+            <a href="https://www.instagram.com/asherfield_auto?igsh=eWw4d2VtNmp6MW1u&utm_source=qr">
+                <i class="bi bi-instagram"></i>
+            </a>
+            <a href="#">
+                <i class="bi bi-facebook"></i>
+            </a>
+            <a href="#">
+                <i class="bi bi-telegram"></i>
+            </a>
+            <a href="#">
+                <i class="bi bi-youtube"></i>
+            </a>
+          </div>
+        </div>
+  
+        <div class="bottom">
+          <div>
+            <h3>Contact us</h3>
+            <a href="https://www.google.com/maps/place/5+Periwinkle+Way,+Parkwood+WA+6147,+Australia/@-32.0437016,115.9137367,703m/data=!3m2!1e3!4b1!4m6!3m5!1s0x2a32bdbb7a7b9429:0xb7be3bebf1a61896!8m2!3d-32.0437016!4d115.9137367!16s%2Fg%2F11c1bm_n37?entry=ttu&g_ep=EgoyMDI0MDkxNi4wIKXMDSoASAFQAw%3D%3D">
+                <i class="bi bi-geo-alt"></i>5 Periwinkle way
+                Perth, WA 6107 AU</a>
+            <a href="/"><i class="bi bi-telephone"></i>+61431625885</a>
+            <a href="mailto:asherfeildz@gmail.com"><i class="bi bi-envelope"></i>asherfeildz@gmail.com</a>
+          </div>
+          <div>
+            <h3>Hours</h3>
+            <a href="#">Monday 9:00am–10:00pm</a>
+            <a href="#">Tuesday 9:00am–10:00pm</a>
+            <a href="#">Wednesday 9:00am–10:00pm</a>
+            <a href="#">Thursday 9:00am–10:00pm</a>
+            <a href="#">Friday 9:00am–10:00pm</a>
+            <a href="#">Saturday 9:00am–6:00pm</a>
+            <a href="#">Sunday 9:00am–12:00pm</a>
+          </div>
+          <div>
+            <h3>Service Links</h3>
+            <a href="/">Terms of Service</a>
+            <a href="/">Privacy Policy</a>
+            <a href="/">License</a>
+            <a href="#">All Versions</a>
+          </div>
+        </div>
+        <div class="container">
+            <p class="text-white all-right">All Right Reserved @Umair Riyas</p>
+        </div>
+      </div>
+</section>
+
+</body>
+</html>
